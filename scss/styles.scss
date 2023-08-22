@@ -215,3 +215,62 @@ a {
         }
     }
 }
+
+.client {
+    margin-top: 98px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__heading {
+        position: relative;
+        width: 253px;
+        color: #080415;
+        font-size: 4.2rem;
+        font-weight: 500;
+        line-height: 1.19; /* 119.048% */
+        letter-spacing: -1.68px;
+        margin-left: 99px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 86px;
+            height: 2px;
+            background: #5d3bee;
+            top: 22px;
+            left: -99px;
+        }
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 34px;
+        margin-left: 105px;
+
+        .client-item {
+            display: flex;
+            align-items: center;
+
+            .warner-bros {
+                @include flexcenter();
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+            }
+
+            &__icon {
+                margin-right: 13px;
+            }
+
+            &__name {
+                color: #080415;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -630,20 +630,22 @@ a {
                     line-height: 1.25; /* 125% */
                     letter-spacing: -1.28px;
                     margin-bottom: 23px;
+                    transition: color 1.2s ease-in-out;
                 }
             }
 
             svg {
+                color: #161a1c;
                 position: absolute;
                 top: 12px;
                 right: 0;
-                transition: transform 1.2s ease-in-out;
+                transition: transform 1.2s ease-in-out, color 1.2s ease-in-out;
             }
 
             .answer {
                 max-height: 0;
                 overflow: hidden;
-                transition: max-height 1.2s;
+                transition: max-height 1.2s ease-in-out;
 
                 p {
                     width: 487px;
@@ -660,14 +662,21 @@ a {
                 height: 2px;
                 background: #08182f;
                 margin-top: 11px;
-                transition: transform 1.2s ease-in-out;
+                transition: transform 1.2s ease-in-out,
+                    background-color 1.2s ease-in-out;
+            }
+
+            &.active h3 {
+                color: #5d3bee;
             }
 
             &.active .faq-border {
                 transform: translateY(10px);
+                background-color: #5d3bee;
             }
 
             &.active svg {
+                color: #5d3bee;
                 transform: translate(0, 25px);
             }
 
@@ -678,6 +687,61 @@ a {
 
             &.active .svg-gone {
                 display: none;
+            }
+        }
+    }
+}
+
+.gallery {
+    margin-top: 160px;
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__desc {
+        display: block;
+        width: 528px;
+        margin: 20px auto 0;
+    }
+
+    .interaction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+
+        .gallery-link {
+            color: #5d3bee;
+            font-size: 3.2rem;
+            font-weight: 500;
+            line-height: 1.25; /* 125% */
+            letter-spacing: -1.28px;
+            text-decoration-line: underline;
+        }
+    }
+
+    &-list {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    &-item {
+        display: block;
+        width: 370px;
+        cursor: pointer;
+        overflow: hidden;
+
+        & img {
+            width: 100%;
+            height: 529px;
+            object-fit: cover;
+            transition: 0.25s;
+
+            &:hover {
+                transform: scale(1.2);
             }
         }
     }

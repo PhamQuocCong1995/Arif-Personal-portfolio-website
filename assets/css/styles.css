@@ -650,6 +650,112 @@ a {
   transform: scale(1.2);
 }
 
+.talk {
+  margin-top: 140px;
+}
+.talk .container {
+  width: 1330px;
+}
+.talk__inner {
+  width: 100%;
+  height: 488px;
+  position: relative;
+  background: #fbfaff;
+  padding: 68px 0;
+  overflow: hidden;
+}
+.talk .cheer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.talk__heading {
+  text-align: center;
+}
+.talk__desc {
+  width: 570px;
+  display: block;
+  margin: 20px auto 0;
+}
+.talk-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  position: absolute;
+  z-index: 1;
+  right: 580px;
+}
+.talk-decor1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.talk-decor2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.talk-decor3 {
+  position: absolute;
+  top: 0;
+  right: 246px;
+}
+
+.footer {
+  margin-top: 50px;
+}
+.footer .container {
+  width: 1429px;
+}
+.footer__inner {
+  padding: 0 50px;
+}
+.footer__navbar {
+  display: flex;
+  align-items: center;
+}
+.footer .logo {
+  display: flex;
+  align-items: center;
+}
+.footer .logo-text {
+  color: #080415;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 30px;
+  margin-left: 10px;
+  text-decoration-line: underline;
+}
+.footer .memoji-boy {
+  margin-left: 357px;
+}
+.footer .navbar {
+  margin-left: auto;
+}
+.footer .navbar-list {
+  display: flex;
+  align-items: center;
+}
+.footer .navbar-list .navbar-item {
+  color: #51586a;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 0 22px;
+  transition: color 0.25s;
+}
+.footer .navbar-list .navbar-item:hover {
+  color: #000958;
+  text-shadow: 1px 0 0 currentColor;
+}
+.footer .footer-border {
+  width: 100%;
+  height: 1px;
+  background: #0c0720;
+  opacity: 0.2;
+  margin-top: 32px;
+}
+
 @keyframes fade {
   from {
     opacity: 0;

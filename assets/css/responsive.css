@@ -1,3 +1,56 @@
-
+/* PC */
+/* Tablet and Mobile */
+@media screen and (max-width: 991px) {
+  .header {
+    display: none;
+  }
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  .mobile-header {
+    display: block;
+  }
+  .mobile-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 0 16px;
+    border-bottom: 1px solid #d6d3e2;
+  }
+  .mobile-header__inner .reponsive-logo {
+    margin-left: 239px;
+  }
+  .mobile-header__inner .menu {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid rgba(93, 59, 238, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mobile-header__inner .menu .line1,
+  .mobile-header__inner .menu .line2 {
+    height: 2px;
+    width: 17px;
+    background: #5d3bee;
+    border-radius: 50px;
+  }
+  .mobile-header__inner .menu .line2 {
+    margin-top: 4px;
+  }
+  .mobile-header__inner__border {
+    width: 377px;
+    height: 1px;
+    background: #d6d3e2;
+  }
+}
+/* Tablet */
+/* Mobile */
 
 /*# sourceMappingURL=responsive.css.map */

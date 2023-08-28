@@ -98,6 +98,14 @@ a {
     justify-content: center;
 }
 
+.mobile-header {
+    display: none;
+}
+
+.menu-overlay {
+    display: none;
+}
+
 .header {
     padding: 20px 0;
     background: #fbfaff;
@@ -124,6 +132,10 @@ a {
     }
     .memoji-boy {
         margin-left: 357px;
+    }
+
+    .memoji-boy__reponsive {
+        display: none;
     }
 
     .navbar {
@@ -400,9 +412,7 @@ a {
     }
 
     &-action {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexcenter();
         margin-top: 80px;
 
         &__btn {
@@ -413,12 +423,25 @@ a {
 }
 
 .about {
+    position: relative;
+    background: #fbfaff;
     margin-top: 140px;
+    padding-bottom: 74px;
+
+    .about-decor1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .about-decor2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 
     &__hello {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexcenter();
 
         & span {
             color: #5d3bee;
@@ -706,9 +729,7 @@ a {
     }
 
     .interaction {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexcenter();
         margin-top: 30px;
 
         .gallery-link {
@@ -889,6 +910,11 @@ a {
                 font-weight: 400;
                 line-height: 1.67; /* 166.667% */
                 letter-spacing: -0.54px;
+            }
+
+            .policy:hover,
+            .condition:hover {
+                text-decoration: underline;
             }
 
             .footer-bottom__border {

@@ -1,29 +1,27 @@
 /* PC */
 /* Tablet and Mobile */
 @media screen and (max-width: 991px) {
-  .header {
+  .header__navbar {
+    justify-content: space-between;
+    border-bottom: 1px solid #d6d3e2;
+    padding-bottom: 15.5px;
+  }
+  .header__navbar .memoji-boy,
+  .header__navbar .navbar,
+  .header__navbar .logo {
     display: none;
   }
-  .menu-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-  }
-  .mobile-header {
+  .header__navbar .reps-logo,
+  .header__navbar .memoji-boy__resp {
     display: block;
   }
-  .mobile-header__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 26px 0 16px;
-    border-bottom: 1px solid #d6d3e2;
+  .header__navbar .reps-logo {
+    margin-left: 251px;
   }
-  .mobile-header__inner .reponsive-logo {
-    margin-left: 239px;
+  .header__navbar .toggle-menu {
+    margin-left: auto;
   }
-  .mobile-header__inner .menu {
+  .header__navbar .toggle-menu .menu {
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -34,20 +32,39 @@
     justify-content: center;
     flex-direction: column;
   }
-  .mobile-header__inner .menu .line1,
-  .mobile-header__inner .menu .line2 {
+  .header__navbar .toggle-menu .menu .line1,
+  .header__navbar .toggle-menu .menu .line2 {
     height: 2px;
     width: 17px;
     background: #5d3bee;
     border-radius: 50px;
   }
-  .mobile-header__inner .menu .line2 {
+  .header__navbar .toggle-menu .menu .line2 {
     margin-top: 4px;
   }
-  .mobile-header__inner__border {
-    width: 377px;
-    height: 1px;
-    background: #d6d3e2;
+  .mobile-header .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: 0.5s ease;
+  }
+  .mobile-header .sidebar {
+    position: fixed;
+    inset: 0 60% 0 0;
+    background: #fff;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+  }
+  .mobile-header .menu-checkbox:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile-header .menu-checkbox:checked ~ .sidebar {
+    transform: translateX(0);
   }
 }
 /* Tablet */

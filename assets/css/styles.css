@@ -89,20 +89,16 @@ a {
   letter-spacing: -1.28px;
 }
 
-.mobile-header {
-  display: none;
-}
-
-.menu-overlay {
-  display: none;
-}
-
 .header {
   padding: 20px 0;
   background: #fbfaff;
 }
 .header .container {
   width: 1330px;
+}
+.header .reps-logo,
+.header .memoji-boy__resp {
+  display: none;
 }
 .header__navbar {
   display: flex;

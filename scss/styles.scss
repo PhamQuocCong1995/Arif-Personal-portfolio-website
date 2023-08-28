@@ -98,19 +98,16 @@ a {
     justify-content: center;
 }
 
-.mobile-header {
-    display: none;
-}
-
-.menu-overlay {
-    display: none;
-}
-
 .header {
     padding: 20px 0;
     background: #fbfaff;
     .container {
         width: 1330px;
+    }
+
+    .reps-logo,
+    .memoji-boy__resp {
+        display: none;
     }
 
     &__navbar {

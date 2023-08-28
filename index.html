@@ -96,8 +96,6 @@
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Overlay -->
-        <div class="menu-overlay"></div>
         <!-- PC Header -->
         <header class="header">
             <div class="container">
@@ -148,31 +146,45 @@
                                 </li>
                             </ul>
                         </nav>
+
+                        <!-- Reponsive Memoji -->
+                        <img
+                            src="./assets/images/responsive/reponsive-memoji.svg"
+                            alt=""
+                            class="memoji-boy__resp"
+                        />
+
+                        <!-- Reponsive Logo -->
+                        <div class="reps-logo">
+                            <img
+                                src="./assets/images/responsive/reponsive-logo.svg"
+                                alt="Reponsive Logo "
+                            />
+                        </div>
+
+                        <!-- Tablet/Mobile menu -->
+                        <label for="menu-checkbox" class="toggle-menu">
+                            <div class="menu">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                        </label>
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- Tablet & Mobile header -->
+        <!-- Tablet/Mobile header -->
         <header class="mobile-header">
-            <div class="container">
-                <div class="mobile-header__inner">
-                    <img
-                        src="./assets/images/responsive/reponsive-memoji.svg"
-                        alt=""
-                    />
-                    <div class="reponsive-logo">
-                        <img
-                            src="./assets/images/responsive/reponsive-logo.svg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="menu">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                    </div>
-                </div>
-            </div>
+            <input
+                hidden
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+            />
+            <label for="menu-checkbox" class="overlay"></label>
+            <div class="sidebar"></div>
         </header>
 
         <!-- Hero -->

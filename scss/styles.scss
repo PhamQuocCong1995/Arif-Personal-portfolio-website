@@ -98,6 +98,10 @@ a {
     justify-content: center;
 }
 
+.mobile-header {
+    display: none;
+}
+
 .header {
     padding: 20px 0;
     background: #fbfaff;
@@ -247,6 +251,11 @@ a {
             right: -168.5px;
         }
     }
+
+    // Responsive
+    &__img-respdecor {
+        display: none;
+    }
 }
 
 .client {
@@ -295,14 +304,11 @@ a {
                 border-radius: 50%;
             }
 
-            &__icon {
-                margin-right: 13px;
-            }
-
             &__name {
                 color: #080415;
                 font-size: 1.5rem;
                 font-weight: 700;
+                margin-left: 13px;
             }
         }
     }

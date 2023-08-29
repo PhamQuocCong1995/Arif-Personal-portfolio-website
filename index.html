@@ -123,7 +123,7 @@
 
                         <!-- Navbar -->
                         <nav class="navbar">
-                            <ul class="navbar-list">
+                            <ul id="pc-nav" class="navbar-list">
                                 <li>
                                     <a href="#project" class="navbar-item">
                                         Projects
@@ -184,7 +184,20 @@
                 class="menu-checkbox"
             />
             <label for="menu-checkbox" class="overlay"></label>
-            <div class="sidebar"></div>
+            <div class="sidebar">
+                <!-- logo -->
+                <div class="logo">
+                    <img src="./assets/images/Logo.svg" alt="Logo" class="" />
+                    <span>hi@arif.interactive</span>
+                </div>
+                <ul id="sidebar-nav"></ul>
+                <script>
+                    const pcNav = document.querySelector("#pc-nav");
+                    const sidebarNav = document.querySelector("#sidebar-nav");
+
+                    sidebarNav.innerHTML = pcNav.innerHTML;
+                </script>
+            </div>
         </header>
 
         <!-- Hero -->
@@ -203,6 +216,11 @@
                             src="./assets/images/hero-decor-01.svg"
                             alt="decor"
                             class="hero__img-decor"
+                        />
+                        <img
+                            src="./assets/images/responsive/hero-decor-02-resp.svg"
+                            alt=""
+                            class="hero__img-respdecor"
                         />
                     </div>
                     <!-- Hero content -->
@@ -381,7 +399,7 @@
             </section>
 
             <!-- Work -->
-            <section class="work">
+            <section style="display: none" class="work">
                 <div class="container">
                     <div class="work__inner">
                         <div class="work-header">
@@ -476,7 +494,7 @@
             </section>
 
             <!-- About me -->
-            <section class="about">
+            <section style="display: none" class="about">
                 <div class="container">
                     <div class="about__inner">
                         <div class="about__hello">
@@ -578,7 +596,7 @@
             </section>
 
             <!-- FAQ -->
-            <section class="faq">
+            <section style="display: none" class="faq">
                 <div class="container">
                     <div class="faq__inner">
                         <h2 class="section__heading faq__heading">
@@ -797,7 +815,7 @@
             </section>
 
             <!-- Gallery -->
-            <section class="gallery">
+            <section style="display: none" class="gallery">
                 <div class="container">
                     <div class="gallery__inner">
                         <h2 class="section__heading gallery__heading">
@@ -841,7 +859,7 @@
             </section>
 
             <!-- Let talk -->
-            <section class="talk">
+            <section style="display: none" class="talk">
                 <div class="container">
                     <div class="talk__inner">
                         <div class="cheer-icon">
@@ -882,7 +900,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer style="display: none" class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <!-- Header navbar -->

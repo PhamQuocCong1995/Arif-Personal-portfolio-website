@@ -89,6 +89,28 @@ a {
   letter-spacing: -1.28px;
 }
 
+.dots {
+  width: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px auto 0;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #080415;
+  opacity: 0.2;
+}
+.dot.active {
+  background: #5d3bee;
+  opacity: 1;
+  border: 3px solid #fff;
+  outline: 1px solid #5d3bee;
+}
+
 .mobile-header {
   display: none;
 }
@@ -316,6 +338,9 @@ a {
   line-height: 1.67; /* 166.667% */
   margin-top: 15px;
 }
+.service .slider-dot {
+  display: none;
+}
 
 .work {
   margin-top: 140px;
@@ -524,26 +549,6 @@ a {
   font-weight: 400;
   line-height: 1.81; /* 181.25% */
   margin-top: 3px;
-}
-.about__people .dots {
-  width: 144px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 40px auto 0;
-}
-.about__people .dots .dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #080415;
-  opacity: 0.2;
-}
-.about__people .dots .dot.active {
-  background: #5d3bee;
-  opacity: 1;
-  border: 3px solid #fff;
-  outline: 1px solid #5d3bee;
 }
 
 .faq {

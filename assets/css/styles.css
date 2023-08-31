@@ -417,6 +417,10 @@ a {
   bottom: 0;
   right: 0;
 }
+.about .about-decor1__resp,
+.about .about-decor2__resp {
+  display: none;
+}
 .about__hello {
   display: flex;
   align-items: center;
@@ -663,6 +667,11 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  overflow: hidden;
+}
+.gallery-list .gallery-item:nth-child(4),
+.gallery-list .gallery-item:nth-child(5) {
+  display: none;
 }
 .gallery-item {
   display: block;
@@ -678,6 +687,9 @@ a {
 }
 .gallery-item img:hover {
   transform: scale(1.2);
+}
+.gallery-dot {
+  display: none;
 }
 
 .talk {
@@ -730,6 +742,9 @@ a {
   position: absolute;
   top: 0;
   right: 246px;
+}
+.talk-decor__resp {
+  display: none;
 }
 
 .footer {

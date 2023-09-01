@@ -882,6 +882,11 @@ a {
         margin-left: 357px;
     }
 
+    .memoji-boy__resp,
+    .navbar__resp {
+        display: none;
+    }
+
     .navbar {
         margin-left: auto;
 
@@ -955,6 +960,12 @@ a {
                 margin-right: 23px;
             }
         }
+    }
+
+    .footer-wrap__resp,
+    .footer-border__resp,
+    .all-reserved__resp {
+        display: none;
     }
 }
 

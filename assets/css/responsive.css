@@ -502,10 +502,6 @@
   .talk .cheer-icon img {
     width: 48px;
     height: 48px;
-    position: absolute;
-    z-index: 1;
-    top: 36px;
-    left: 173px;
   }
   .talk__heading {
     width: 225px;
@@ -513,10 +509,6 @@
     line-height: 1.17; /* 116.667% */
     letter-spacing: -1.44px;
     margin: 10px auto 0;
-    position: absolute;
-    z-index: 1;
-    top: 94px;
-    left: 85px;
   }
   .talk__desc {
     width: 350px;
@@ -524,15 +516,12 @@
     font-weight: 400;
     line-height: 1.62; /* 162.5% */
     margin: 10px auto 0;
-    position: absolute;
-    z-index: 1;
-    top: 188px;
-    left: 22px;
   }
   .talk-cta {
     top: 296px;
-    right: 24px;
+    right: 50%;
     margin-top: 0;
+    transform: translateX(50%);
   }
   .talk-cta .btn {
     --height: 55px;
@@ -544,6 +533,80 @@
     top: 0;
     left: 0;
     z-index: 0;
+  }
+  .footer {
+    margin-top: 120px;
+    padding-bottom: 29px;
+  }
+  .footer__inner {
+    padding: 0;
+  }
+  .footer__navbar-resp {
+    flex-direction: column;
+    border-bottom: none;
+    padding: 0;
+  }
+  .footer__navbar-resp .memoji-boy__resp,
+  .footer__navbar-resp .navbar__resp,
+  .footer__navbar-resp .logo {
+    display: block;
+  }
+  .footer__navbar-resp .navbar__resp {
+    margin-top: 20px;
+  }
+  .footer__navbar-resp .navbar__resp .navbar-item {
+    font-size: 1.6rem;
+    padding: 0 19px;
+  }
+  .footer__navbar-resp .footer-logo__resp {
+    display: flex;
+    margin-top: 58px;
+  }
+  .footer-border {
+    display: none;
+  }
+  .footer-bottom {
+    display: none;
+  }
+  .footer .footer-wrap__resp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 57px;
+  }
+  .footer .footer-wrap__resp .policy,
+  .footer .footer-wrap__resp .condition {
+    color: #525771;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+    letter-spacing: -0.54px;
+  }
+  .footer .footer-wrap__resp .footer-bottom__border {
+    width: 1px;
+    height: 14px;
+    background: #525771;
+    opacity: 0.6;
+    margin: 0 13px 0 23px;
+  }
+  .footer .footer-border__resp {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #0c0720;
+    opacity: 0.2;
+    margin-top: 23px;
+  }
+  .footer .all-reserved__resp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #525771;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+    opacity: 0.6;
   }
 }
 

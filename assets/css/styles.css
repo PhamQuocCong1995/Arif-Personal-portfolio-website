@@ -775,6 +775,10 @@ a {
 .footer .memoji-boy {
   margin-left: 357px;
 }
+.footer .memoji-boy__resp,
+.footer .navbar__resp {
+  display: none;
+}
 .footer .navbar {
   margin-left: auto;
 }
@@ -838,6 +842,11 @@ a {
 }
 .footer-bottom .footer-bottom__wrap .policy {
   margin-right: 23px;
+}
+.footer .footer-wrap__resp,
+.footer .footer-border__resp,
+.footer .all-reserved__resp {
+  display: none;
 }
 
 @keyframes fade {

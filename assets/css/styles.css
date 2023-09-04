@@ -211,7 +211,7 @@ a {
 .hero__content .hero__desc {
   width: 370px;
   color: #51586a;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.67; /* 166.667% */
   margin-top: 20px;
@@ -381,6 +381,9 @@ a {
   font-weight: 400;
   line-height: 1.44; /* 143.75% */
   margin-top: 10px;
+}
+.work-list .work-item div {
+  margin-top: 20px;
 }
 .work-list .work-item__link {
   color: #080415;
